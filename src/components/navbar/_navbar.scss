@@ -1,0 +1,18 @@
+@import '../../styles//utils/variables';
+
+.nav {
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid;
+}
+
+.navbar {
+    text-decoration: none;
+    color: $primary-color;
+    margin-left: 50px;
+    font-size: 20px;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
