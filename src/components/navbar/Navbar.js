@@ -4,15 +4,15 @@ import './_navbar.scss';
 
 function Navbar() {
   return (
-    <nav className="nav">
-      <NavLink to="/" className="navbar">
-        Accueil
+    <nav className='navbar'>
+      <NavLink to="/">
+        <div>Accueil</div>
       </NavLink>
-      <NavLink to="/about" className="navbar">
-        A Propos
+      <NavLink to="/about" >
+        <div>A Propos</div>
       </NavLink>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

@@ -1,0 +1,26 @@
+@import '../../styles/utils/variables';
+
+.footer {
+    background-color: $background;
+    margin-top: 25px;
+    padding: 0, 0, 20px, 0;
+    text-align: center;
+    height: 150px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.footer-logo {
+    margin-top: 25px;
+}
+
+.footer-text {
+    color: $tertiary-color;
+    font-size: 20px;
+}
+
+@media only screen and (width <= 450px) {
+    .footer-text {
+        font-size: 12px;
+    }
+}

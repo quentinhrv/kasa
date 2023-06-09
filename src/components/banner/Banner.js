@@ -1,12 +1,14 @@
-import React from "react";
-import '../banner/_banner.scss'
+import React from 'react';
+import './_banner.scss';
 
-function Banner() {
+function Banniere({ image, texte }) {
     return (
-        <div className="home-banner">
-            Chez vous, partout et ailleurs
-        </div>
-    )
+      <div className="banner">
+        <img className="banner_image" src={image} alt="Bannière" />
+        <div className="banner_dark"></div>
+        <span className="banner_text">{texte}</span>
+      </div>
+    );
 }
-
-export default Banner;
+  
+export default Banniere;

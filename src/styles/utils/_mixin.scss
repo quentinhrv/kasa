@@ -1,0 +1,68 @@
+// FONT-SIZE
+
+@mixin font-size-nav {
+    font-size: 24px;
+}
+
+@mixin font-size-nav-mobile {
+    font-size: 12px;
+}
+
+@mixin font-size-title {
+    font-size: 45px;
+}
+
+@mixin font-size-title-mobile {
+    font-size: 22px;
+}
+
+@mixin font-size-cards {
+    font-size : 16px;
+}
+
+// BORDER-RADIUS
+
+@mixin border-radius-desktop {
+    border-radius: 20px;
+}
+
+@mixin border-radius-mobile {
+    border-radius: 10px;
+}
+
+// COMPONENTS
+
+@mixin banner {
+    margin-top: 50px;
+    border-radius: 20px;
+    height: 250px;
+    position: relative;
+
+    &_image {
+        border-radius: 20px;
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    &_dark {
+        background-color: $background;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        left: 0;
+        opacity: 0.3;
+        position: absolute;
+        top: 0;
+    }
+    
+    &_text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+        color: $tertiary-color;
+        @include font-size-title;
+    }
+}

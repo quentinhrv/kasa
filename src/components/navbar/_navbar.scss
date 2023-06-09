@@ -1,18 +1,32 @@
-@import '../../styles//utils/variables';
-
-.nav {
-    display: flex;
-    margin-top: 20px;
-    border: 1px solid;
-}
+@import '../../styles/utils/mixin';
+@import '../../styles/utils/variables';
 
 .navbar {
-    text-decoration: none;
-    color: $primary-color;
-    margin-left: 50px;
-    font-size: 20px;
-    
-    &:hover {
-        text-decoration: underline;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    @include font-size-nav;
+
+    a {
+        text-decoration: none;
+        color: $primary-color;
+        
+        &:hover,
+        &.active {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media only screen and (width <= 820px) {
+    .navbar {
+        gap: 0;
+     
+        a {
+            text-transform: uppercase;
+            @include font-size-nav-mobile;
+            margin-left: 20px;
+        }
     }
 }
