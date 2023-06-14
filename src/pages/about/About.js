@@ -1,18 +1,30 @@
 import React from 'react';
-import Header from '../../components/header/Header';
 import Banner from '../../components/banner/Banner';
-import Footer from '../../components/footer/Footer';
 import banner_about from '../../assets/banner_about.png';
+import Collapse from "../../components/collapse/Collapse";
+import CollapseDatas from "../../datas/collapses.json";
 import './_about.scss';
 
 function About() {
   return (
     <div className='about'>
-      <Header />
         <main>
-          <Banner image={banner_about} titre="" />
+          <div className='banner_about'>
+            <Banner image={banner_about} titre="" />
+          </div>
+          
+          <div className="collapse">
+          <div className="collapse__dropdown">
+            {CollapseDatas.map((item) => {
+              return (
+                <div key={item.id}>
+                  <Collapse content={item.content} title={item.title} />
+                </div>
+              );
+            })}
+          </div>
+        </div>
         </main>
-      <Footer />
     </div>
   );
 }

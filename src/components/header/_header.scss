@@ -1,3 +1,5 @@
+@import '../../styles/main';
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -5,7 +7,7 @@
     margin: 2% 5%;
 }
 
-@media only screen and (width <= 820px) {
+@media only screen and (width <= $tablet-breakpoint) {
     .logo {
         width: 125px;
         height: 40px;

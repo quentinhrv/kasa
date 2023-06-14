@@ -1,5 +1,4 @@
-@import '../../styles/utils/variables';
-@import '../../styles/utils/mixin';
+@import '../../styles/_main.scss';
 
 .banner {
     @include banner;

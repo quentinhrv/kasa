@@ -1,22 +1,30 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Accommodations from './pages/accommodations/Accommodations';
 import Error from './pages/error/Error';
+import Layout from './pages/layout/Layout';
+
 import './styles/_main.scss';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/accommodations/:id" element={<Accommodations />} />
-        <Route path="*" element={<Error />} />
+        <Route element={<Layout />}>
+          <Route index element={<Home/>} />
+
+          <Route path="/home" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/accommodations/:id" element={<Accommodations/>} />
+
+          <Route path="*" element={<Error/>} />
+        </Route>
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

@@ -5,11 +5,11 @@ import './_cards.scss';
 function Cards({ id, title, cover}) {
 
   return (
-    <Link to={`/logement/${id}`}>
+    <Link to={`/accommodations/${id}`}>
       <div className='cards'>
-        <img src={cover} alt={title} className='cards-image'/>
+        <img src={cover} alt={title} className='cards_image'/>
 
-        <h2 className='cards-title'>{title}</h2>
+        <h2 className='cards_title'>{title}</h2>
       </div>
     </Link>
   )

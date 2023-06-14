@@ -1,17 +1,17 @@
-@import '../../styles/utils/variables';
+@import '../../styles/_main.scss';
 
 .footer {
     background-color: $background;
     margin-top: 25px;
-    padding: 0, 0, 20px, 0;
+    padding: 0;
     text-align: center;
-    height: 150px;
+    height: 160px;
     width: 100%;
-    border: 1px solid black;
+
 }
 
 .footer-logo {
-    margin-top: 25px;
+    padding-top: 25px;
 }
 
 .footer-text {

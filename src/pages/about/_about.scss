@@ -1,0 +1,13 @@
+.banner_about {
+    margin-bottom: 61px;
+}
+
+@media only screen and (width <= 820px) {
+    .banner_about .banner {
+        height: 150px;
+    }
+
+    .banner_about {
+        margin-bottom: 0;
+    }
+}

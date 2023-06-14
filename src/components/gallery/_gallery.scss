@@ -1,13 +1,12 @@
-@import '../../styles/utils/variables';
-@import '../../styles/utils/mixin';
+@import '../../styles/_main.scss';
 
-.home-gallery {
+.home_gallery {
     background: $secondary-color;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 50px;
-    @include border-radius-desktop;
+    @include big-radius;
     padding: 2%;
 
     > a {
@@ -16,7 +15,7 @@
 }
 
 @media only screen and (width <= 820px) {
-    .home-gallery {
+    .home_gallery {
         margin-top: 20px;
         @include border-radius-mobile;
 
@@ -28,7 +27,7 @@
 }
 
 @media only screen and (width <= 450px) {
-    .home-gallery {
+    .home_gallery {
         padding: 0;
         background: $tertiary-color;
         > a {

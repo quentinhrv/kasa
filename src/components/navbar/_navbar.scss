@@ -1,5 +1,4 @@
-@import '../../styles/utils/mixin';
-@import '../../styles/utils/variables';
+@import '../../styles/_main.scss';
 
 .navbar {
     display: flex;
@@ -19,13 +18,13 @@
     }
 }
 
-@media only screen and (width <= 820px) {
+@media only screen and (width <= $tablet-breakpoint) {
     .navbar {
         gap: 0;
      
         a {
             text-transform: uppercase;
-            @include font-size-nav-mobile;
+            @include font-size-nav-tablet;
             margin-left: 20px;
         }
     }

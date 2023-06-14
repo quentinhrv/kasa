@@ -6,7 +6,7 @@ import datas from '../../datas/datas.json';
 
 function Gallery() {
   return (
-    <section className='home-gallery'>
+    <div className='home_gallery'>
       {datas.map(datas => {
         return (
           <Cards
@@ -17,7 +17,7 @@ function Gallery() {
           />
         )
       })}
-    </section>
+    </div>
   )
 }
 

@@ -1,10 +1,12 @@
-// FONT-SIZE
+// --- FONT-SIZE DESKTOP --- \\
 
 @mixin font-size-nav {
     font-size: 24px;
 }
 
-@mixin font-size-nav-mobile {
+// --- FONT-SIZE TABLET --- \\
+
+@mixin font-size-nav-tablet {
     font-size: 12px;
 }
 
@@ -22,24 +24,24 @@
 
 // BORDER-RADIUS
 
-@mixin border-radius-desktop {
-    border-radius: 20px;
+@mixin big-radius {
+    border-radius: 25px;
 }
 
 @mixin border-radius-mobile {
     border-radius: 10px;
 }
 
-// COMPONENTS
+// --- COMPONENTS --- \\
 
 @mixin banner {
     margin-top: 50px;
-    border-radius: 20px;
+    @include big-radius;
     height: 250px;
     position: relative;
 
     &_image {
-        border-radius: 20px;
+        @include big-radius;
         height: 100%;
         object-fit: cover;
         width: 100%;
@@ -49,7 +51,7 @@
         background-color: $background;
         width: 100%;
         height: 100%;
-        border-radius: 20px;
+        @include big-radius;
         left: 0;
         opacity: 0.3;
         position: absolute;
