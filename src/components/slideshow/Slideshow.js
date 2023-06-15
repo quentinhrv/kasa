@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import './_slideshow.scss';
 
 function Slideshow ({ slides }) {
@@ -45,6 +46,6 @@ function Slideshow ({ slides }) {
             })}
         </section>
     );
-}
+};
 
 export default Slideshow;

@@ -1,8 +1,11 @@
 import React from 'react';
+
 import DatasAccommodations from '../../datas/datas.json';
-import './_infos.scss';
 import FullStar from '../../assets/full-star.png'
 import EmptyStar from '../../assets/empty-star.png';
+import './_infos.scss';
+
+
 
 function Infos({ id }) {
     const accommodation = DatasAccommodations.find((accommodation) => accommodation.id === id);
@@ -47,6 +50,6 @@ function Infos({ id }) {
             </div>
         </div>
     );
-}
+};
 
 export default Infos;

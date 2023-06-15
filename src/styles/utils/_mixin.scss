@@ -1,70 +1,73 @@
 // --- FONT-SIZE DESKTOP --- \\
 
+@mixin font-size-standard {
+    font-size: 18px;
+}
+
+@mixin font-size-about {
+    font-size: 24px;
+}
+
+@mixin font-size-about {
+    font-size: 24px;
+}
+
 @mixin font-size-nav {
     font-size: 24px;
 }
 
-// --- FONT-SIZE TABLET --- \\
-
-@mixin font-size-nav-tablet {
-    font-size: 12px;
-}
-
-@mixin font-size-title {
+@mixin font-size-banner {
     font-size: 45px;
 }
 
-@mixin font-size-title-mobile {
-    font-size: 22px;
+@mixin font-size-chevron-caroussel {
+    font-size: 70px;
 }
 
-@mixin font-size-cards {
-    font-size : 16px;
+@mixin font-size-name-accommodation {
+    font-size: 36px;
 }
 
-// BORDER-RADIUS
+@mixin font-size-tags {
+    font-size: 12px;
+}
+
+// --- FONT-SIZE MOBILE --- \\
+
+@mixin font-size-standard-mobile {
+    font-size: 14px;
+}
+
+@mixin font-size-nav-mobile {
+    font-size: 12px;
+}
+
+@mixin font-size-banner-mobile {
+    font-size: 24px;
+}
+
+@mixin font-size-about-mobile {
+    font-size: 12px;
+}
+
+@mixin font-size-chevron-caroussel-mobile {
+    font-size: 25px;
+}
+
+@mixin font-size-tags-mobile {
+    font-size: 10px;
+}
+
+// --- BORDER-RADIUS --- \\
 
 @mixin big-radius {
     border-radius: 25px;
 }
 
-@mixin border-radius-mobile {
+@mixin medium-radius {
     border-radius: 10px;
 }
 
-// --- COMPONENTS --- \\
-
-@mixin banner {
-    margin-top: 50px;
-    @include big-radius;
-    height: 250px;
-    position: relative;
-
-    &_image {
-        @include big-radius;
-        height: 100%;
-        object-fit: cover;
-        width: 100%;
-    }
-
-    &_dark {
-        background-color: $background;
-        width: 100%;
-        height: 100%;
-        @include big-radius;
-        left: 0;
-        opacity: 0.3;
-        position: absolute;
-        top: 0;
-    }
-    
-    &_text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        white-space: nowrap;
-        color: $tertiary-color;
-        @include font-size-title;
-    }
+@mixin small-radius {
+    border-radius: 5px;
 }

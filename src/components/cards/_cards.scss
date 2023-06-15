@@ -23,25 +23,25 @@
 
 .cards_title {
     width: 60%;
-    margin-inline-start: 0.5rem;
+    margin-inline-start: 15px;
     line-height: 150%;
     color: $tertiary-color;
     position: absolute;
-    @include font-size-cards
+    @include font-size-standard;
 }
 
-@media only screen  and (width <= 820px) {
+@media only screen  and (width <= $tablet-breakpoint) {
     .cards {
-        @include border-radius-mobile;
+        @include medium-radius;
     }
     
     .cards_image {
         height: 300px;
-        @include border-radius-mobile;
+        @include medium-radius;
     }
 }
 
-@media only screen  and (width <= 450px) {
+@media only screen  and (width <= $mobile-breakpoint) {
     .cards {
         margin: 0;
         margin-bottom: 20px;

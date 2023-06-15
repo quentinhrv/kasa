@@ -11,7 +11,7 @@
       background-color: $primary-color;
       color: $tertiary-color;
       padding: 0.5em 1em;
-      border-radius: 5px;
+      @include small-radius;
       display: flex;
       justify-content: space-between;
       
@@ -23,17 +23,15 @@
 
 .collapse_toggle {
     position: absolute;
-    top: 0px;
+    top: -2px;
     right: 3%;
-    border: 1px solid;
 }
 
 .collapse_content {
     background-color: $secondary-color;
-    border-radius: 5px;
+    @include small-radius;
     position: relative;
-    @include font-size-nav;
-    top: -30px;
+    top: -40px;
     z-index: -1;
     padding: 5px 15px 5px 15px;
     margin-bottom: -30px;
@@ -47,36 +45,30 @@
   }
   
   .collapse_content.open.transition {
-    max-height: 500px; /* Remplacez par la hauteur maximale souhaitée */
+    max-height: 500px;
     transition: max-height 1s ease;
   }
 
 .fa-solid {
     cursor: pointer;
     color: $tertiary-color;
-    @include font-size-nav
 }
 
-@media only screen and (width <= 820px) {
+@media only screen and (width <= $tablet-breakpoint) {
     .collapse_container {
         margin: 0 0 -20px 0;
     }
 
     .collapse_title {
-        @include font-size-nav-tablet;
+        @include font-size-about-mobile
     }
 
     .collapse_content {
-        @include font-size-nav-tablet;
         padding-top: 20px;
         top: -35px;
     }
 
-    .fa-solid {
-        @include font-size-nav-tablet;
-    }
-
     .collapse_toggle {
-        top: -15px;
+        top: -6px;
     }
 }

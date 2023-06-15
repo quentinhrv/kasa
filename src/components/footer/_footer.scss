@@ -10,17 +10,17 @@
 
 }
 
-.footer-logo {
+.footer_logo {
     padding-top: 25px;
 }
 
-.footer-text {
+.footer_text {
     color: $tertiary-color;
     font-size: 20px;
 }
 
 @media only screen and (width <= 450px) {
-    .footer-text {
+    .footer_text {
         font-size: 12px;
     }
 }

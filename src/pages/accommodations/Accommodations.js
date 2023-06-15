@@ -41,6 +41,6 @@ function Accommodations() {
             </main>
         </div>
     );
-  }
+};
   
-  export default Accommodations;
+export default Accommodations;

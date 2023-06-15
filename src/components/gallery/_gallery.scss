@@ -14,10 +14,10 @@
     }
 }
 
-@media only screen and (width <= 820px) {
+@media only screen and (width <= $tablet-breakpoint) {
     .home_gallery {
         margin-top: 20px;
-        @include border-radius-mobile;
+        @include medium-radius;
 
         > a {
             width: 50%;
@@ -26,7 +26,7 @@
 
 }
 
-@media only screen and (width <= 450px) {
+@media only screen and (width <= $mobile-breakpoint) {
     .home_gallery {
         padding: 0;
         background: $tertiary-color;

@@ -1,7 +1,9 @@
 import React from 'react';
+
 import Cards from '../cards/Cards';
-import './_gallery.scss';
 import datas from '../../datas/datas.json';
+
+import './_gallery.scss';
 
 
 function Gallery() {
@@ -18,7 +20,7 @@ function Gallery() {
         )
       })}
     </div>
-  )
-}
+  );
+};
 
 export default Gallery

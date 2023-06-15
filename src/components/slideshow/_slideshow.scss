@@ -14,7 +14,7 @@
     right: 0%;
     top: 0%;
     bottom: 0%;
-    border-radius: 10px;
+    @include medium-radius;
     opacity: 0;
     transition: opacity ease-in-out 1s;
 
@@ -23,12 +23,12 @@
         width: 100%;
         object-fit: cover;
         position: absolute;
-        border-radius: 10px;
+        @include medium-radius;
     }
 
     &_number {
         position: absolute;
-        font-size: 20px;
+        @include font-size-standard;
         bottom: 5%;
         left: 50%;
         color: $tertiary-color;
@@ -43,7 +43,7 @@
 .right-Arrow {
     display: flex;
     position: absolute;
-    top: 40%;
+    top: 35%;
     right: 2%;
     z-index: 10;
     cursor: pointer;
@@ -53,7 +53,7 @@
 .left-Arrow {
     display: flex;
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 2%;
     z-index: 10;
     cursor: pointer;
@@ -61,23 +61,27 @@
 }
 
 .fa-chevron-left, .fa-chevron-right {
-    font-size: 50px;
+    @include font-size-chevron-caroussel;
 }
 
-@media only screen  and (width <= 820px) {
+@media only screen  and (width <= $tablet-breakpoint) {
     .slide {
         height: 255px;
     }
 
     .left-Arrow {
-        top: 30%;
+        top: 40%;
     }
 
     .right-Arrow {
-        top: 30%;
+        top: 40%;
     }
 
     .slider_number{
         display: none;
+    }
+
+    .fa-chevron-left, .fa-chevron-right {
+        @include font-size-chevron-caroussel-mobile;
     }
 }

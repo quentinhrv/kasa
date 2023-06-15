@@ -11,8 +11,7 @@
         text-decoration: none;
         color: $primary-color;
         
-        &:hover,
-        &.active {
+        &:hover, &.active {
             text-decoration: underline;
         }
     }
@@ -24,7 +23,7 @@
      
         a {
             text-transform: uppercase;
-            @include font-size-nav-tablet;
+            @include font-size-nav-mobile;
             margin-left: 20px;
         }
     }

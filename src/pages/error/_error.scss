@@ -1,5 +1,4 @@
-@import '../../styles/utils/mixin';
-@import '../../styles/utils/variables';
+@import '../../styles/main';
 
 .error_page {
     text-align: center;
@@ -24,7 +23,7 @@
 
 }
 
-@media only screen and (width <= 820px) {
+@media only screen and (width <= $tablet-breakpoint) {
     .error_page {
         div {
             h1 {
@@ -32,7 +31,7 @@
         }
 
             p {
-                font-size: 18px;
+                @include font-size-standard-mobile;
                 text-align: center;
                 margin: -25px 50px 0 50px;
             }

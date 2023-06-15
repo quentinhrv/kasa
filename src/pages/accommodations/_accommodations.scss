@@ -1,3 +1,5 @@
+@import '../../styles/main';
+
 .collapse_accommodation {
     display: flex;
     flex-direction: row;
@@ -18,16 +20,11 @@
     margin: 0;
 }
 
-li {
-    list-style: none;
+.collapse_accommodation .collapse_toggle {
+    right: 5%;
 }
 
-ul {
-    padding: 0px;
-    margin: 0 0 5px 0;
-}
-
-@media only screen and (width <= 820px) {
+@media only screen and (width <= $tablet-breakpoint) {
     .collapse_accommodation {
         flex-direction: column;
 
@@ -40,5 +37,9 @@ ul {
             padding-left: 0px;
             width: 100%;
         }
+    }
+
+    .collapse_accommodation .collapse_toggle {
+        right: 3%;
     }
 }
